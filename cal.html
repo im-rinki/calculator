@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>calculator</title>
+<style>
+#btn{
+width="130%"
+}
+.form{
+width:400px;
+height:550px;
+margin:auto;
+border:2px solid black;
+}
+
+input{
+width:40px;
+background-color:blue;
+color:white;
+border-radius: 2px;
+border: 2px solid black;
+padding: 20px;
+
+
+}
+#a{
+width:360px;
+}
+#btn{
+	width:370px;
+	margin: 10px;
+
+}
+#b{
+	width:100px;
+	border-radius: 5px;
+	margin-left: 23px;
+}
+</style>
+</head>
+<body>
+<div class="form">
+<form name="forms">
+<input type="text" name="answer" id="a"><br><br>
+<input type="button" value=" 1 " onclick="forms.answer.value += '1'" id="b">
+<input type="button" value=" 2 " onclick="forms.answer.value += '2'" id="b">
+<input type="button" value=" 3 " onclick="forms.answer.value += '3'" id="b">
+
+
+<br></br>
+<input type="button" value=" 4 " onclick="forms.answer.value += '4'" id="b">
+<input type="button" value=" 5 " onclick="forms.answer.value += '5'" id="b">
+<input type="button" value=" 6 " onclick="forms.answer.value += '6'" id="b">
+
+
+<br></br>
+<input type="button" value=" 7 " onclick="forms.answer.value += '7'" id="b">
+<input type="button" value=" 8 " onclick="forms.answer.value += '8'" id="b">
+<input type="button" value=" 9 " onclick="forms.answer.value += '9'" id="b">
+ 
+
+<br></br>
+<input type="button" value=" + " onclick="forms.answer.value += '+'" id="b">
+<input type="button" value=" - " onclick="forms.answer.value += '-'" id="b">
+<input type="button" value=" * " onclick="forms.answer.value =+ '*'" id="b">
+
+
+<br></br>
+<input type="button" value=" / " onclick="forms.answer.value += '/'" id="b">
+<input type="button" value=" 0 " onclick="forms.answer.value += '0'" id="b">
+<input type="button" value=" = " onclick="forms.answer.value =eval(forms.answer.value)" id="b">
+
+
+<br></br>
+<input type="button" value="Clear All" onclick=forms.answer.value='' " id="btn">
+</form>
+</div>
+</body>
+</html>
